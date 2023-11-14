@@ -13,44 +13,137 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 .temp-gif{background-image: url(everything-is-temporary.gif); background-position: center; background-size: cover;}
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.imgsize {
+  width: 100px;
+  height: 100px;
+}
+td {
+  font-family: "Lato", sans-serif;
+  color: rgba(211, 211, 211, 0.76);
+  text-align: center;
+}
+th {
+  color: white;
+}
+
 </style>
 </head>
 <body>
-
+  <div id="navbar">
+    <a href="#Overview">Overview</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Portfolio">Portfolio</a>
+    <a href="HinesJos_Resume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o w3-hover-opacity"></i></a>
+  </div>
 <!-- Header -->
-<header class="w3-container temp-gif w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">JOSEPH HINES</h1>
-  <p class="w3-xlarge">Information Systems | Level Design | Programming</p>
+<header class="w3-container temp-gif w3-center" style="padding:256px 16px">
+  <h1 class="w3-margin w3-jumbo" style="letter-spacing: 6px; color: white;">JOSEPH HINES</h1>
+  <p class="w3-xlarge whitetext" style="color: white;">Information Systems | Level Design | Programming</p>
   <a href="index.html"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top">Overview</button></a>
-  <a href="#"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top">Resume</button></a>
-  <a href="#"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top">Potfolio</button></a>
+  <a href="#Skills"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top">Skills</button></a>
+  <a href="#Portfolio"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top">Potfolio</button></a>
+  <a href="HinesJos_Resume.pdf" target="_blank"><button class="w3-button w3-dark-gray w3-padding-large w3-large w3-margin-top" target="_blank">Resume <i class="fa fa-file-pdf-o w3-hover-opacity"></i></button></a>
 </header>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<a id="Overview"></a><div class="w3-row-padding w3-padding-64 w3-container"></a>
+  <div class="w3-content">
+    <div>
+      <h1 class="w3-jumbo">Hello. I'm Joe.</h1>
+      <h5 class="w3-padding-32">Currently enrolled at Eastern Connecticut State University as a Junior, my major is Business Information Systems (BIS), with minors in English, Business Analytics, and Computer Science.</h5>
+
+      <h6 class="w3-text-grey w3-right">My undergraduate courseload has provided me with the technical and business knowledge needed to succeed in a multitude of industries. Having both technical literacy and business competency
+        allows me to work with data, develop ideas, and present results. In addition to my degree, I have been able to conduct undergraduate research through Eastern. My thesis (in progress), <i>"Pneumonia Patients in Relation to 
+          Length of Stay, Readmission Rates, and Healthcare Costs,"</i> has given me the opportunity to use my undergradute education to publish real-world, relevant research for organizational use.<br>
+        Outside of my education, one of my biggest passions is game design, namely in the realm of level design. In my freetime, I have been able to develop compelling, engaging experiences for both singleplayer and multiplayer
+        settings, namely in the Source and Source 2 engines. Although my knowledge on game development as a whole is sparse, I hope to develop skills beyond level design and to be able to create my own experiences.
+
+      </h6>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<a id="Skills"></a><div class="w3-row-padding w3-padding-64 w3-container w3-card-4" style="background-color: #333;"></a>
+  <div class="w3-content">
+    <div>
+      <h1 class="w3-xxlarge w3-center" style="color: white;">I am skilled in using...</h1>
+      <div class="w3-container">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="excellogo.png"></th>
+            <td style="text-align: center"><img class="imgsize" src="pythonlogo.png"></th>
+            <td style="text-align: center"><img class="imgsize" src="sqllogo.png"></th>
+            <td style="text-align: center"><img class="imgsize" src="adobelogo.png"></th>
+            <td style="text-align: center"><img class="imgsize" src="source2logo.png"></th>
+          </tr>
+          <tr>
+            <th style="text-align: center">Microsoft Excel</td>
+            <th style="text-align: center">Python</td>
+            <th style="text-align: center">SQL</td>
+            <th style="text-align: center">Adobe Suite</td>
+            <th style="text-align: center">Source 2</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">In my undergraduate courseload as well as my place of work, 
+              Excel has proven useful in data analysis and wrangling.
+            </td>
+            <td style="text-align: center">Python, especially Pandas and Scikit-learn, have been immensely useful not only for data
+              analysis, but also for my undergraduate research thesis.
+            </td>
+            <td style="text-align: center">I am experienced in using SQL for data architecture, wrangling, and presentation.
+              In my undergraduate courseload as well as my place of work, I have used SQL in a multitude of projects and assignments.
+            </td>
+            <td style="text-align: center">Through my place of work on campus, I have become comfortable using Adobe products such
+              as Adobe Premiere and have produced advertising content for Eastern Connecticut State University for the past 3 years.
+            </td>
+            <td style="text-align: center">Since making the jump from Source 1 to Source 2 in 2021, I have learned how to develop maps for a multitude
+              of different games and experiences, creating not only a variety in the content I have produced, but a variety in the different approaches to level design.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<a id="Portfolio"></a><div class="w3-row-padding w3-padding-64 w3-container"></a>
   <div class="w3-content">
     <div class="w3-center">
-      <h1>About Me</h1>
-      <h5 class="w3-padding-32">My name is Joe Hines. I'm currently enrolled at Eastern Connecticut State University with a major in Business Information Systems (BIS) and minors in English, Business Analytics, and Computer Science.</h5>
-
-      <p class="w3-text-grey">The skillsets I've developed in my major include data database architecture, data analysis and presentation, and project management in areas of IT. In addition to this, I have become
-        proficient in SQL, Python, and Excel. I have been able to further develop my interests and knowledge in machine learning and software development in Python through my computer science minor, as well as using
-        a combined approach of SQL and python to solve real-world data problems. My minor in business analytics serves to strengthen my skills in both data and business, and my english minor has developed my 
-        writing, speaking, and presentation skills.<br>
-        Outside the classroom, I have a great interest in game development, namely in level design. Though I am trying to branch out into game development, most of my passions lie in developing levels for singleplayer
-        and multiplayer experiences across a variety of games, namely ones on the Source and Source 2 engine. 
-      </p>
-    </div>
-
-    <div class="w3-center">
-      <p>Putting a slideshow of projects here potentially, or a list of strengths.</p>
+      <h1>Here are some projects I've worked on.</h1>
+      <h5 class="w3-padding-32 w3-xxlarge"></h5>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-4 w3-center w3-opacity w3-gray">  
-  <h1 class="w3-margin w3-xlarge">Joseph Hines | <a style="text-decoration:none" href = "mailto:hinesjos@outlook.com">hinesjos@outlook.com</a> | <a href="https://www.linkedin.com/in/joseph-hines-77012a256/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> | <a href="https://steamcommunity.com/id/GunkMonkey428/" target="_blank"><i class="fa fa-steam-square w3-hover-opacity"></i></a></h1>
+<footer class="w3-container w3-center" style="line-height: 0.5; background-color: #333; color: white;">  
+  <h4>Want to contact me? Here's how.</h4>
+  <h5 class="w3-margin">Joseph Hines | (203) 308-6911 | <a style="text-decoration:none" href = "mailto:hinesjos@outlook.com">hinesjos@outlook.com</a> | <a href="https://www.linkedin.com/in/joseph-hines-77012a256/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> | <a href="HinesJos_Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o w3-hover-opacity"></i></a></h5>
 </footer>
 
 <script>
@@ -61,6 +154,15 @@ function myFunction() {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
+  }
+}
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
   }
 }
 </script>
