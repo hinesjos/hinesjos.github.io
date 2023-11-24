@@ -11,8 +11,7 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-.temp-gif{background-image: url(everything-is-temporary.gif); background-position: center; background-size: cover;}
+.temp-gif{background-image: url(tempgif.gif); background-position: center; background-size: cover;}
 #navbar {
   background-color: #333; /* Black background color */
   position: fixed; /* Make it stick/fixed */
@@ -47,6 +46,56 @@ td {
 }
 th {
   color: white;
+}
+
+#Overview {
+  scroll-behavior: smooth;
+}
+#Skills {
+  scroll-behavior: smooth;
+}
+#Portfolio {
+  scroll-behavior: smooth;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  height: auto;
+  padding: 5px 5px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 33%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: auto;
+  width: auto;
 }
 
 </style>
@@ -97,15 +146,13 @@ th {
   <div class="w3-content">
     <div>
       <h1 class="w3-jumbo w3-center" style="color: white;">I am skilled in using...</h1>
-      <div class="w3-container">
+      <div class="">
+       
+    <div class="row">
+      <div class="column">
         <table class="w3-table w3-card-4">
           <tr>
             <td style="text-align: center"><img class="imgsize" src="excellogo.png"></td>
-            <td style="text-align: center"><img class="imgsize" src="pythonlogo.png"></td>
-            <td style="text-align: center"><img class="imgsize" src="sqllogo.png"></td>
-            <td style="text-align: center"><img class="imgsize" src="adobelogo.png"></td>
-            <td style="text-align: center"><img class="imgsize" src="htmllogo.png"></td>
-            <td style="text-align: center"><img class="imgsize" src="source2logo.png"></td>
           </tr>
           <tr>
             <th style="text-align: center">Microsoft Excel</th>
@@ -119,23 +166,89 @@ th {
             <td style="text-align: center">In my undergraduate courseload as well as my place of work, 
               Excel has proven useful in data analysis and wrangling.
             </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="pythonlogo.png"></td>
+          </tr>
+          <tr>
+            <th style="text-align: center">Python</th>
+          </tr>
+          <tr>
             <td style="text-align: center">Python, especially Pandas and Scikit-learn, have been immensely useful not only for data
               analysis, but also for my undergraduate research thesis.
             </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="sqllogo.png"></td>
+          </tr>
+          <tr>
+            <th style="text-align: center">SQL</th>
+          </tr>
+          <tr>
             <td style="text-align: center">I am experienced in using SQL for data architecture, wrangling, and presentation.
               In my undergraduate courseload as well as my place of work, I have used SQL in a multitude of projects and assignments.
             </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="adobelogo.png"></td>
+          </tr>
+          <tr>
+            <th style="text-align: center">Adobe Suite</th>
+          </tr>
+          <tr>
             <td style="text-align: center">Through my place of work on campus, I have become comfortable using Adobe products such
               as Adobe Premiere and have produced advertising content for Eastern Connecticut State University for the past 3 years.
             </td>
             <td style="text-align: center">The coursework in my undergraduate courseload required me to learn web development, such as HTML, CSS, and Javascript, and my work required me to
               learn how to work with CMS services such as Cascade. With these under my belt, I went ahead and developed this website.
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="htmllogo.png"></td>
+          </tr>
+          <tr>
+            <th style="text-align: center">Web Development</th>
+          </tr>
+          <tr>
+            <td style="text-align: center">The coursework in my undergraduate courseload required me to learn web development, such as HTML, CSS, and Javascript. As a result,
+              I took the knowledge from that class and used it to develop this website.
             </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="w3-table w3-card-4">
+          <tr>
+            <td style="text-align: center"><img class="imgsize" src="source2logo.png"></td>
+          </tr>
+          <tr>
+            <th style="text-align: center">Source 2</th>
+          </tr>
+          <tr>
             <td style="text-align: center">Since making the jump from Source 1 to Source 2 in 2021, I have learned how to develop maps for a multitude
               of different games and experiences, creating not only a variety in the content I have produced, but a variety in the different approaches to level design.
             </td>
           </tr>
         </table>
+      </div>
+
+    </div>
+
       </div>
     </div>
   </div>
