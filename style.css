@@ -1,0 +1,160 @@
+#header {
+    padding: 60px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+#logcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 32px;
+}
+
+@media (max-width: 800px) {
+  #logcontainer {
+    flex-direction: column;
+  }
+}
+
+#logbox {
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(29, 29, 88, 0.75));
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+    position: relative;
+}
+
+#logbox:hover {
+    transition: 0.2s;
+    transform: scale( 102% );
+    box-shadow: rgb(242, 240, 228) 0px 0px 15px;
+    text-shadow: rgb(249, 177, 231) 2px 2px 0px;
+}
+
+.logbox-content {
+    font-family: Verdana;
+    color: rgb(242, 240, 228);
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    line-height: 8px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  background: black;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    flex-direction: column;
+  }
+}
+
+#navbutton{
+    font-family: Verdana;
+    color: #f6d6ff;
+    text-shadow: rgb(0, 173, 92) 2px 2px 0px;
+    padding: 32px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    transition: 0.2s;
+    transform: scale( 150% );
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a171e;
+}
+
+footer {
+    font-family: Verdana;
+    margin-top: auto;
+    text-align: center;
+    background-color: #000000;
+    color: #f6d6ff;
+    font-size: 100%;
+}
+
+#devlog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 32px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+@media (max-width: 1000px) {
+    #devlog-container {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+  }
+
+#devlog-header {
+    font-family: Verdana;
+    color: #f6d6ff;
+    text-shadow: rgb(0, 173, 92) 2px 2px 0px;
+    line-height: 0px;
+}
+#devlog-text {
+    font-family: Verdana;
+    color: white;
+    line-height: 200%;
+}
+video {
+    align-self: center;
+}
+
+#projectcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 32px;
+  }
+  
+  #projectbox {
+      width: 500px;
+      height: 400px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 25px;
+      transition: 0.5s;
+      position: relative;
+  }
+  
+  #projectbox:hover {
+      transition: 0.2s;
+      transform: scale( 102% );
+      box-shadow: rgb(242, 240, 228) 0px 0px 15px;
+      text-shadow: rgb(249, 177, 231) 2px 2px 0px;
+  }
+  
+  .project-content {
+      font-family: Verdana;
+      color: rgb(242, 240, 228);
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      line-height: 8px;
+  }
