@@ -6,6 +6,11 @@
   font-size: 30px;
 }
 
+#indexblurb {
+  text-align: center;
+  padding: 32px;
+}
+
 #logcontainer {
   display: flex;
   flex-direction: row;
