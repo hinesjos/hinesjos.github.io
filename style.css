@@ -146,18 +146,16 @@ video {
 }
 
 #projectcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    box-sizing: border-box; /* Includes padding in the width calculation */
-    width: 100%;
-    padding: 16px; /* Optional padding */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px;
   }
   
   #projectbox {
-      width: 500px;
-      height: 400px;
+      width: 400px;
+      height: 350px;
       padding: 10px;
       margin: 10px;
       border-radius: 25px;
