@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gunk Monkey | Devlogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<header id="navbar"style="padding:16px 16px">
+    <a href="index.html"><b id="navbutton">GUNK MONKEY</b></a>
+    <a href="projects.html"><b id="navbutton">PROJECTS</b></a>
+    <a href="devlogs-2025.html"><b id="navbutton">DEVLOG</b></a>
+</header>
+
+<div id="devlog-container">
+
+  <h1 id="devlog-header">Tower of Tumult+</h1>
+  <div id="5-8-2025"></div>
+  <h5 id="devlog-header">5-8-2025</h5>
+  <p id="devlog-text">
+    Hey all! Sorry for no posts recently but I've been up to TONS of work since I last posted!<br>
+To be frank, I got sick of working on the game for a bit. It was a bit of a burnout, but before then AND AFTER THEN I got tons of work on what is now known as <b>Tower of Tumult</b>!<br></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ZLS_X61-Ys?si=ymO_6RPoXptjCqrK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p id="devlog-text">
+Some of the most notable changes are the selection of weapons, implementation of scrolls, general facelift on visuals, and some enemy changes. I'm pretty happy with what I got done considering how much time I had, and I definitely have a roadmap of what else to add.<br>
+Now, I know I had the to-do list in my last post, which has now changed. I will NOT have an inventory system in my game. I see no need for one when it'll simply clutter the screen. The only thing I can think of in terms of one is to keep track of baubles (wand upgrades) and runes (player upgrades), though I don't know how necessary this will be, or if it will necessitate the creation of a whole new screen.<br>
+I DO plan on adding a boss room, however, as well as redoing all the rooms currently in ToT (abbreviation!). I intend on having themes for floors, every 10, as well as a shop. As I was working on the shop, however, I decided I wanted to take the approach that most roguelikes take with them. I want the shop to be a physical place, with items you walk up to and actually purchase. I think it'll add to the game, and after doing research into other games in the genre (gaming), I found it to be satisfying seeing and existing with what you'll use later on.<br>
+So where does that leave us now? Well, I'm going to add a boss room, redo rooms, build out scrolls/runes/wands more, and add a boss. Or two. Definitely two before rolling out a demo. Woot woot.<br>
+  </p>
+  <p id="devlog-text">
+    <br>I also made another game! It started off as a port of You Touched it Last from GMOD to Source 2 since I was bored and pissy about the game and running into bugs, and is now <b>Hot Potato</b>. I don't know why I decided to start learning networking and making multiplayer games when my issue was with debugging. It took A LOT to learn how to get this to work, but I'm happy I learned a new skill to put into other projects! NOTE that as of right now ToT will not have multiplayer. Oh well. I don't want to remake my game for the sake of it! Hoping to have another update by end of June.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mj-9C8ayXFg?si=OeqACtjsK3Tcryvi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h1 id="devlog-header">Roguelite - Art & To-Do</h1>
+<div id="3-1-2025"></div>
+<h5 id="devlog-header">3-1-2025</h5>
+<p id="devlog-text">
+  Hello all! New update!<br>
+  Recently I wanted to revamp the look of the game in its current state. I figured, we have a basic game loop going, having it look more like a game will help inform the process now.<br>
+  I wanted to go for something like a retro 90's aesthetic, where the textures try to achieve realism while still having all that fuzz in it. I'm debating on going lower with the resolution, but I'm happy with it for now.<br><br>
+  
+  I also want to outline a set of plans for myself to refer to. Currently I work from my Notes app on my phone, a .txt file on my computer, a .txt file on my laptop (which I update the website from), and scribbles on papers on my desk. I'm going to make a checklist to hold myself to for things I want to complete:<br><br>
+  
+  1. Make all projectiles collide with walls<br>
+  2. Update the player HUD (include health, cooldown time, floor, coins, gems, and an inventory button)<br>
+  3. Add an inventory system (press TAB to pull up the player's staff, runes (upgrades), and scroll (ultimate ability) on the screen to drop/swap)<br>
+  4. Add random pots to rooms (drop pots, coins)<br>
+  5. Have enemies occasionally drop hearts/coins<br>
+  6. Every 5 floors, have a boss room (POC for now) and increase number of rooms on a floor by 1-2.<br>
+  7. Every 10 floors, change the theme of rooms.<br>
+  8. Have 1 chest per floor, containing either a rune (common), scroll (rare), or wand (mega rare)<br>
+  9. Add a shop UI for the player to trade coins/gems for potions, hearts, runes, scrolls, etc.<br><br>
+  
+  I want to accomplish all this in the next few months, probably in no particular order, and will refer to this as a completion list. For now, here's another demo of the game to look at! Now with new textures!<br>
+</p>
+<video width="400" height="300" controls>
+  <source src="media/videos/roguelite_demo_3_1_2025.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h1 id="devlog-header">Roguelite Revamp!</h1>
+<div id="2-22-2025"></div>
+<h5 id="devlog-header">2-22-2025</h5>
+<p id="devlog-text">
+  Hello again!<br>
+  I'm back with a new update to the <i>Untitled Roguelite Game</i>!! I've been reworking systems and developing new ones for the game.<br>
+  Last time we left off, I had created a starting area set in the woods, with the player starting outside of a dungeon, slowly descending into it. The player was just some guy, there was a man at the start, and the enemies were goblins and skeletons.<br>
+  Now... you're at the top of the tower? How'd you get there? Don't worry about that just yet. You're now a little magic man (thinking of calling them the Undying) at the top of a tower with a gnome. His purpose? Don't worry about it.<br>
+  I spent a lot of time reworking not only the room generation, but developing a complete floor generation. The game works like this:<br>
+  1. Player starts at the top of the tower<br>
+  2. Player jumps into a hole, descending the tower<br>
+  3. Player dies and starts at the top of the tower again<br>
+  Pretty simple stuff for now, but I'm happy I finished the general loop. That was the biggest hurdle, that and the art. You may notice that almost every asset is custom-made- I'm really happy about that! I wanted to develop my own art and art style for the game, and, at least for now, I'm happy with it.<br>
+  Now that the basic game loop is done, I want to start fleshing out systems. Namely, I want to add a shop system (the gnome may or may not be involved), upgrades/buffs system, and bosses.<br>
+  I'm not going to spoil too much, since I'd rather show than tell, so here's a demo for now...</p>
+<video width="400" height="300" controls>
+  <source src="media/videos/roguelite_demo_2_22_2025.MP4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h1 id="devlog-header">Untitled Roguelite</h1>
+<div id="1-24-2025"></div>
+<h5 id="devlog-header">1-24-2025</h5>
+<p id="devlog-text">Hello everyone!<br>
+    Recently I've started work on a new project- <i>Untitled Roguelite Game</i>!!! I'm really looking forward to developing a real game in contrast to my previous project, <i>Yummers Donuts</i>. The goal of this project, for now, is to create the gameloop of  roguelite. My main priorities are as follows:<br>
+    1. Develop a system to generate floors and rooms similar to Binding of Isaac (start room, key room, and boss room).<br>
+    2. Create an upgrades system for the player (permanent upgrades across runs, run-specific upgrades, temporary consumables, etc.).<br>
+    3. Make something fun!<br>
+    I'm having loads of fun developing this game and truly learning how to make a compelling game loop. Although it isn't anywhere near a MVP, I do have some content to show for.<br></p>
+    
+    <video width="400" height="300" controls>
+        <source src="media/videos/startfloor.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p id="devlog-text">This is a very early version of the starting area for the game. I want to have a tower the player enters, a merchant they can exchange permanent currency with, and maybe some other things I haven't thought of yet.</p>
+
+    <video width="400" height="300" controls>
+        <source src="media/videos/roomgentest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p id="devlog-text">This is a very early demo of a type of room to be randomly generated. The enemies inside are selected randomly and spawned at preset nodes. I plan on making the loot random, too. Maybe even tagging some rooms to have upgrades over consumables or currency in them?</p>
+
+    <video width="400" height="300" controls>
+        <source src="media/videos/cannoneerdemo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p id="devlog-text">This is the first enemy I made myself for the game- <b>THE CANNONEER!</b> This guy is a static turret enemy that shoots projectiles at the player, much like the goblin enemy I made. I plan on it being more bulky to account for the lack of movement, and I think it works alongside moving enemies to divide the player's attention and resources. I'm not too much of an art guy but I'm happy with how it turned out!</p>
+
+<h1 id="devlog-header">Website Made</h1>
+<div id="1-20-2025"></div>
+<h5 id="devlog-header">1-20-2025</h5>
+<p id="devlog-text">Hello and welcome to GUNK MONKEY, my personal showcase and devlog for all projects related to game design.<br>
+    The main goal of this website is to provide myself the intrinsic value something like LinkedIn can't. I'm looking forward to developing a real portfolio through this website not only to show off my wicked programming skills but to create a timeline of sorts to reflect on. Enjoy!</p>
+
+</div>
+
+<footer>
+  <h4>Want to contact me? <a href="https://steamcommunity.com/id/GunkMonkey428/">Steam</a> | <a href="https://www.youtube.com/@gunkmonkey-l4p">YouTube</a></h4>
+</footer>
+</body>
+</html>

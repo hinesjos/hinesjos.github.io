@@ -74,6 +74,14 @@
     padding: 32px;
 }
 
+#year-header{
+    font-family: Verdana;
+    font-size: 24px;
+    color: #f6d6ff;
+    text-shadow: rgb(0, 173, 92) 2px 2px 0px;
+    padding: 32px;
+}
+
 a {
     text-decoration: none;
     transition: 0.2s;
